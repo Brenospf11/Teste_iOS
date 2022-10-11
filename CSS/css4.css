@@ -1,0 +1,9 @@
+@charset "utf-8";
+* {
+    background-color: #4927aa;
+    color: #f8eee7;
+}
+article p {
+    background-color: #f4decb;
+    color: black
+}

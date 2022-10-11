@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css logo.css">
+    <title>Titulos</title>
+</head>
+<body class="background">
+    <header>
+   <h1><center>Barcelona</center></h1>
+   <nav>
+    <center><big><strong><a href="exercio1.html">Inicio</a> |
+    <a href="Historia.html">Titulo</a> |
+    <a href="lendas.html">Lendas</a></strong></big></center>
+   </nav><br><br>
+
+  
+
+    <center><img class="logo" src="https://upload.wikimedia.org/wikipedia/pt/thumb/4/43/FCBarcelona.svg/1200px-FCBarcelona.svg.png" alt="Barcelona" width="50px"> </div> </center><br><br>
+
+   <center><p><strong>Fundado em 1899 por um grupo de futebolistas suíços, ingleses e catalães. O clube se tornou um símbolo da cultura catalã e do nacionalismo catalão. Ao contrário das principais equipes de futebol, os próprios torcedores é que operam o funcionamento do clube, motivo pelo qual utiliza o lema "Més que un club" (Mais que um clube), que teve origem num discurso do franquista Narcís de Carreras, presidente do Barça.</strong></p></center>
+
+   <h2>Proximo jogo</h2>
+   <div>
+   <div>
+        <span id="day"></span>
+        <div>Dias</div>
+   </div>
+   <div>
+        <span id="hour"></span>
+        <div>Horas</div>
+   </div>
+   <div>
+        <span id="minute"></span>
+        <div>Minutos</div>
+   </div>
+   <div>
+        <span id="second"></span>
+        <div>Segundos</div>
+   </div>
+   </div>
+
+   <p id="demo">
+
+   <script>
+       var deadline = new Date("oct 4, 2022 16:00:00").getTime();
+       var x = setInterval(function() {
+        var now = new Date().getTime();
+        var t = deadline - now;
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((t % (1000 * 60)) / (1000));
+        document.getElementById("day").innerHTML = days;
+        document.getElementById("hour").innerHTML = hours;
+        document.getElementById("minute").innerHTML = minutes;
+        document.getElementById("second").innerHTML = seconds;
+        if (t < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "TIME UP";
+            document.getElementById("day").innerHTML = '0';
+            document.getElementById("hour").innerHTML = '0';
+            document.getElementById("minute").innerHTML = '0';
+            document.getElementById("second").innerHTML = '0'; }
+       },1000);
+   </script>
+   </p>
+
+
+
+
+</header>
+   
+<footer><center>
+   Copyright&copy; @IOS
+
+</center></footer>
+    
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "utf-8";
+.logo {
+    width: 400px;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.logo:hover {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+}
+
+.background {
+    background-image: linear-gradient(bordô, blue);
+}
+
+.demo {
+    font-size: 18px;
+    text-decoration: none;
+    color: #926239;
+    border: #926239 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
